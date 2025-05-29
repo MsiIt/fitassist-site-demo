@@ -1,0 +1,71 @@
+@mixin h1-hero {
+  font-size: p2r(60);
+  line-height: 106%;
+  font-weight: 500;
+}
+
+@mixin h2-title {
+  font-size: p2r(48);
+  line-height: 121%;
+  font-weight: 700;
+}
+
+@mixin h3-subtitle {
+  font-size: p2r(42);
+  line-height: 121%;
+  font-weight: 700;
+}
+
+@mixin h4-title {
+  font-size: p2r(36);
+  line-height: 122%;
+  font-weight: 600;
+}
+
+@mixin h4-subtitle {
+  font-size: p2r(32);
+  line-height: 113%;
+  font-weight: 600;
+}
+
+@mixin p-large-text {
+  font-size: p2r(18);
+  line-height: 122%;
+  font-weight: 400;
+}
+
+@mixin p-body-bold {
+  font-size: p2r(22);
+  line-height: 118%;
+  font-weight: 700;
+}
+
+@mixin p-body-md {
+  font-size: p2r(16);
+  line-height: 118%;
+  font-weight: 600;
+}
+
+@mixin p-body {
+  font-size: p2r(14.4);
+  line-height: 121%;
+  font-weight: 400;
+}
+
+@mixin p-text {
+  font-size: p2r(16);
+  line-height: 121%;
+  font-weight: 400;
+}
+
+@mixin p-quiz-text {
+  font-size: p2r(16);
+  line-height: 125%;
+  font-weight: 400;
+}
+
+@mixin span-footer {
+  font-size: p2r(12);
+  line-height: 14.52px;
+  font-weight: 400;
+}

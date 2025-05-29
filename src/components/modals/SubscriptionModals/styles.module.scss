@@ -1,0 +1,132 @@
+@import '~/styles/config';
+
+.wrapperModal{
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  height: 100%;
+  @include md {
+    height: initial;
+    //padding: 20px 20px;
+  }
+
+  .closeButton{
+    display: flex;
+    align-Items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+
+  .content {
+    width: 550px;
+    @include md {
+      width: 335px;
+      padding: 30px 0;
+    }
+    .contentBlock {
+      border-radius: 16px;
+      padding: 16px 36px;
+      background-color: var(--color-white);
+      @include md {
+        padding: 8px 18px;
+      }
+    }
+  }
+
+}
+
+
+.dialog :global  {
+  .body {
+    width: 550px;
+    margin: 0 auto;
+    @include md {
+      width: 335px;
+    }
+  }
+  .fields {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include md {
+      width: 300px;
+    }
+
+  }
+
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    //@include sm {
+    //  margin-top: 24px;
+    //  gap: 8px;
+    //}
+  }
+  .caption {
+    @include p-body;
+    text-align: center;
+    color: var(--color-black-neutral);
+
+    //@include sm {
+    //  //@include span;
+    //}
+  }
+
+  .stretcher {
+    height: 0px;
+    visibility: hidden;
+  }
+}
+
+.userInfo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius:5px;
+  border: solid 2px var(--color-secondary);
+  margin-bottom:20px
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .info{
+    color: var(--color-secondary);
+    @include p-body;
+  }
+
+  .items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--color-secondary);
+
+    * {
+      font-weight: 600;
+      margin-right: 15px;
+      font-size: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include md {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

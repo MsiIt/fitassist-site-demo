@@ -1,0 +1,247 @@
+@import '~/styles/config';
+
+.header :global {
+  position: fixed;
+  z-index: 1300;
+  left: 0;
+  right: 0;
+  background: #FFFFFFCC;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  .container {
+    max-width: p2r(1416);
+
+    @include lg {
+      padding: 0 24px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    @include lg {
+      padding: 22px 0;
+    }
+  }
+
+  nav {
+    @include p-body-md;
+    display: flex;
+    gap: p2r(24);
+    color: var(--color-primary);
+    margin-left: auto;
+    margin-right: 64px;
+
+    a {
+      padding: p2r(8);
+      transition: all 0.2s;
+
+      &:hover {
+        color: var(--color-primary-hover);
+      }
+    }
+  }
+}
+
+.burgerBlock :global {
+  .icon {
+    height: min-content;
+    padding: 0;
+    border-radius: 5px;
+  }
+}
+
+.content :global {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 108px 24px 24px;
+  background: var(--background-light-modal);
+
+  .menu {
+    display: flex;
+    gap: p2r(24);
+    flex-direction: column;
+    color: var(--color-primary);
+
+    a {
+      @include p-body-md;
+      padding: p2r(8);
+      max-width: unset;
+      width: min-content;
+      white-space: nowrap;
+
+      &:hover {
+        color: var(--color-primary-hover);
+      }
+    }
+  }
+
+  .footer {
+    margin-top: auto;
+
+    .download-btns {
+      margin-bottom: 39px;
+      display: flex;
+      gap: p2r(16);
+    }
+
+    .block-pays {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .items {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        * {
+          font-weight: 600;
+          margin-right: 15px;
+          font-size: 12px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          @include md {
+            margin-right: 9px;
+          }
+        }
+      }
+
+      p {
+        color: var(--color-secondary);
+        font-size: 12px;
+      }
+
+      @include sm {
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.headerPlug {
+  height: p2r(84);
+  background-color: transparent;
+}
+
+.footer :global {
+  position: relative;
+  background: var(--color-black-neutral);
+  padding: 32px 0;
+  color: #878787;
+  font-size: 12px;
+  @include p-body();
+  z-index: 1;
+
+  .container {
+    max-width: p2r(1416);
+  }
+
+  .block-pays {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .items {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 254px;
+      * {
+        margin-right: 10px;
+        font-size: 12px;
+        font-weight: 600;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      @include lg {
+        width: 213px;
+      }
+    }
+  }
+
+  .offerta-block {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    margin-right: 129px;
+
+
+    @include lg {
+    margin-right: 85px;
+    }
+
+    @include md {
+      margin-right: 0;
+    }
+  }
+
+  .policy-block {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .policy {
+      display: flex;
+      gap: 48px;
+
+      @include lg {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+
+    .copyright {
+      width: 129px;
+      font-weight: 400;
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
+    @include lg {
+      p {
+        font-size: 10px;
+      }
+    }
+
+    @include md {
+      margin-top: 8px;
+      flex-direction: column-reverse;
+      gap: 48px;
+    }
+  }
+
+  .privacy {
+    font-size: 12px;
+  }
+
+  @include lg {
+    padding: 32px 48px;
+  }
+
+  @include md {
+    text-align: center;
+
+    .block-pays {
+      flex-direction: column;
+      justify-content: center;
+      gap: 48px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '~/styles/config';
+
+.opportunitiesSwiperItem :global {
+    max-width: p2r(540);
+    display: flex;
+    gap: p2r(16);
+    padding: 19px;
+    box-shadow: 0 4px 15px 0 #7D5CE312;
+    border-radius: 16px;
+    background-color: var(--color-white);
+
+    .icon-container {
+      height: p2r(60);
+      padding: 12px;
+      border-radius: 16px;
+      background-color: var(--color-white-neutral);
+    }
+
+    .text {
+      .title {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-bottom: p2r(14.4);
+
+        @include md {
+          margin-bottom: p2r(5);
+        }
+      }
+
+      .paragraph {
+        @include p-body;
+      }
+    }
+}

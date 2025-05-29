@@ -1,0 +1,12 @@
+@import '~/styles/config';
+
+.closeButton{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-Items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}

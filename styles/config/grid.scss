@@ -1,0 +1,14 @@
+$base-font-size: 16;
+
+$bp-sm: 413px;
+$bp-md: 743px;
+$bp-lg: 1399px;
+$bp-xl: 1920px;
+
+@function p2r($size) {
+  @if ($size == 0) {
+    @return 0;
+  }
+
+  @return calc($size / $base-font-size) + 0rem;
+}

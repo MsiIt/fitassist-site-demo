@@ -1,0 +1,42 @@
+@import 'grid';
+
+// <= 414px
+@mixin sm {
+  @media (max-width: $bp-sm) {
+    @content;
+  }
+}
+
+// <= 743px
+@mixin md {
+  @media (max-width: $bp-md) {
+    @content;
+  }
+}
+
+// <= 1511px
+@mixin lg {
+  @media (max-width: $bp-lg) {
+    @content;
+  }
+}
+
+// > 1512px
+@mixin xl {
+  @media (min-width: $bp-lg + 1px) {
+    @content;
+  }
+}
+
+@mixin absolute-stretch {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin hover-guard {
+  @media (hover: hover) {
+    @content;
+  }
+}

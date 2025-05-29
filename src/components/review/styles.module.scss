@@ -1,0 +1,48 @@
+@import '~/styles/config';
+
+.reviewsSection :global {
+  .reviewer-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-left: 10px;
+
+    .name {
+      font-size: p2r(16);
+    }
+
+    .description {
+      font-size: p2r(12);
+      font-weight: 300;
+    }
+
+    .img {
+      border-radius: 50px;
+    }
+  }
+
+  .review-block {
+    margin: 24px 10px 10px;
+    padding: 16px;
+    box-shadow: 0 4px 15px 0 #7D5CE312;
+    background-color: var(--color-white);
+    border-radius: 16px;
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include md {
+        .quotes {
+          width: 20px;
+          height: 16px;
+        }
+      }
+    }
+
+    .review {
+      margin-top: 16px;
+    }
+  }
+}

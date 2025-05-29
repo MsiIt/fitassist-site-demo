@@ -1,0 +1,37 @@
+.timeInputPopper :global {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-stroke-neutral);
+    border-radius: 3px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-stroke-neutral);
+  }
+
+  .Mui-selected.Mui-selected {
+    background-color: var(--color-primary);
+    border-radius: 12px;
+  }
+}
+
+.dateInputPopper :global {
+  .Mui-selected.Mui-selected {
+    background-color: var(--color-primary);
+  }
+}
+
+.selectIcon.selectIcon {
+  top: calc(50% - 0.7em);
+}

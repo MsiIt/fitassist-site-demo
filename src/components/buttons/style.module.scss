@@ -1,0 +1,72 @@
+@import '~/styles/config';
+
+button.filledButton {
+  @include p-body-bold;
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+
+button.secondarydButton {
+  @include p-body-bold;
+
+  background-color: #f0f6f9;
+  border: 2px solid var(--color-stroke-neutral);
+  box-shadow: none;
+
+  color: var(--color-primary);
+
+  &:hover {
+    background-color: #dfeaf0;
+    box-shadow: none;
+  }
+  &:active {
+    background-color: #c5d9e3;
+    box-shadow: none;
+  }
+}
+
+.storeLink {
+  transition: all 0.2s;
+  &:hover {
+    background: #252525;
+    border: 1px solid #3A3A3A;
+  }
+
+  &:active {
+    background: #252525;
+    border: 1px solid #252525;
+  }
+}
+
+.storeLink :global {
+  width: 202px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #3A3A3A;
+  border-radius: 8px;
+  text-transform: none;
+  padding: 10px 12.6px;
+  color: var(--color-white);
+  letter-spacing: .1rem;
+  border: 1px solid #3A3A3A;
+
+  .from {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .name {
+    @include p-body-bold();
+    font-size: p2r(22);
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}

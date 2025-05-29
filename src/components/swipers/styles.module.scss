@@ -1,0 +1,71 @@
+@import '~/styles/config';
+
+.reviewsSwiperContainer :global {
+  position: relative;
+
+  .swiper-btns {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    gap: p2r(16);
+    z-index: 10;
+
+    .btn {
+      padding: p2r(14);
+      border-radius: 16px;
+      border: 2px solid var(--color-stroke-neutral);
+      background-color: #f0f6f9;
+    }
+  }
+}
+
+.opportunitiesSwiper :global {
+  position: relative;
+  height: 1032px;
+
+  .swiper-vertical {
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    margin-top: 40px;
+  }
+
+  .swiper-btns {
+    position: absolute;
+    bottom: 150px;
+    left: -82px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    z-index: 10;
+  }
+
+  @include lg {
+    height: 643px;
+    padding-left: 24px;
+    margin: 0 auto;
+
+    .swiper-wrapper {
+      margin: 0;
+    }
+
+    .swiper-btns {
+      left: -58px;
+      bottom: 120px;
+    }
+  }
+
+  @include md {
+    height: 100%;
+    padding-left: 0;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import '~/styles/config';
+
+.privacyPolicy :global {
+  margin-top: 130px;
+  margin-bottom: 50px;
+
+  .container {
+    padding: 0 1.5rem;
+    max-width: 65rem;
+  }
+
+  h2 {
+    @include h1-hero;
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    @include md {
+      @include p-body-bold;
+    }
+  }
+
+  h6 {
+    @include p-body-md;
+    font-weight: 700;
+  }
+
+  .bold {
+    @include p-text;
+    font-weight: 700;
+  }
+
+  p {
+    @include p-text;
+    margin-top: 10px;
+  }
+
+  a {
+    color: var(--color-primary);
+  }
+
+  li {
+    margin-top: 5px;
+  }
+
+}
